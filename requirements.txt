@@ -2,7 +2,10 @@ beautifulsoup4==4.13.4
 markdownify==1.2.2
 nltk==3.9.2
 numpy==2.4.2
+<<<<<<< HEAD
 protobuf>=3.20,<6
+=======
+>>>>>>> 31e26e25dae712ef3910dcece6c3079c2531b8f0
 rank_bm25==0.2.2
 sentence_transformers==5.1.2
 streamlit==1.39.0
