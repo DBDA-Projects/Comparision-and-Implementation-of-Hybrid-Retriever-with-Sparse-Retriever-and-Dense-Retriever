@@ -8,3 +8,5 @@ protobuf>=3.20,<6
 rank_bm25==0.2.2
 sentence_transformers==5.1.2
 streamlit==1.39.0
+
+faiss-cpu
