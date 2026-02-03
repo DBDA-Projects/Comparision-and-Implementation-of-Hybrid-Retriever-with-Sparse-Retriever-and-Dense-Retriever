@@ -1,0 +1,156 @@
+[
+  {
+    "query_id": 1,
+    "query": "What is list comprehension in Python?",
+    "language": "python",
+    "relevant_sources": ["datastructures.html"]
+  },
+  {
+    "query_id": 2,
+    "query": "How does a Python for loop work?",
+    "language": "python",
+    "relevant_sources": ["controlflow.html"]
+  },
+  {
+    "query_id": 3,
+    "query": "Difference between list and tuple in Python",
+    "language": "python",
+    "relevant_sources": ["datastructures.html"]
+  },
+  {
+    "query_id": 4,
+    "query": "How to define a function in Python?",
+    "language": "python",
+    "relevant_sources": ["controlflow.html"]
+  },
+  {
+    "query_id": 5,
+    "query": "Explain Python exception handling using try except",
+    "language": "python",
+    "relevant_sources": ["errors.html", "exceptions.html"]
+  },
+
+  {
+    "query_id": 6,
+    "query": "What is ArrayList in Java?",
+    "language": "java",
+    "relevant_sources": ["ArrayList.html"]
+  },
+  {
+    "query_id": 7,
+    "query": "Difference between ArrayList and LinkedList",
+    "language": "java",
+    "relevant_sources": ["ArrayList.html", "LinkedList.html"]
+  },
+  {
+    "query_id": 8,
+    "query": "What is HashMap in Java?",
+    "language": "java",
+    "relevant_sources": ["HashMap.html"]
+  },
+  {
+    "query_id": 9,
+    "query": "Explain the List interface in Java",
+    "language": "java",
+    "relevant_sources": ["List.html"]
+  },
+  {
+    "query_id": 10,
+    "query": "What is the role of Object class in Java?",
+    "language": "java",
+    "relevant_sources": ["Object.html"]
+  },
+
+  {
+    "query_id": 11,
+    "query": "Explain a compact way to create lists in Python",
+    "language": "python",
+    "relevant_sources": ["datastructures.html"]
+  },
+  {
+    "query_id": 12,
+    "query": "How does Python manage runtime errors?",
+    "language": "python",
+    "relevant_sources": ["errors.html", "exceptions.html"]
+  },
+  {
+    "query_id": 13,
+    "query": "Why are dictionaries faster than lists for lookups?",
+    "language": "python",
+    "relevant_sources": ["stdtypes.html"]
+  },
+  {
+    "query_id": 14,
+    "query": "How does Python organize reusable code?",
+    "language": "python",
+    "relevant_sources": ["modules.html"]
+  },
+  {
+    "query_id": 15,
+    "query": "What happens when an exception is not handled in Python?",
+    "language": "python",
+    "relevant_sources": ["errors.html"]
+  },
+
+  {
+    "query_id": 16,
+    "query": "How does HashMap store data internally?",
+    "language": "java",
+    "relevant_sources": ["HashMap.html"]
+  },
+  {
+    "query_id": 17,
+    "query": "Why is ArrayList faster than LinkedList for random access?",
+    "language": "java",
+    "relevant_sources": ["ArrayList.html", "LinkedList.html"]
+  },
+  {
+    "query_id": 18,
+    "query": "What happens when a key collision occurs in HashMap?",
+    "language": "java",
+    "relevant_sources": ["HashMap.html"]
+  },
+  {
+    "query_id": 19,
+    "query": "Why does every Java class inherit from Object?",
+    "language": "java",
+    "relevant_sources": ["Object.html"]
+  },
+  {
+    "query_id": 20,
+    "query": "How does Java handle runtime exceptions?",
+    "language": "java",
+    "relevant_sources": ["RuntimeException.html", "Exception.html"]
+  },
+
+  {
+    "query_id": 21,
+    "query": "Difference between Python list and Java ArrayList",
+    "language": "cross",
+    "relevant_sources": ["datastructures.html", "ArrayList.html"]
+  },
+  {
+    "query_id": 22,
+    "query": "Compare exception handling in Python and Java",
+    "language": "cross",
+    "relevant_sources": ["errors.html", "Exception.html"]
+  },
+  {
+    "query_id": 23,
+    "query": "How are collections implemented in Python and Java?",
+    "language": "cross",
+    "relevant_sources": ["datastructures.html", "Collection.html"]
+  },
+  {
+    "query_id": 24,
+    "query": "How does memory handling differ between Python and Java collections?",
+    "language": "cross",
+    "relevant_sources": ["datastructures.html", "ArrayList.html"]
+  },
+  {
+    "query_id": 25,
+    "query": "Compare dictionary in Python with HashMap in Java",
+    "language": "cross",
+    "relevant_sources": ["stdtypes.html", "HashMap.html"]
+  }
+]

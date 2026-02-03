@@ -1,0 +1,76 @@
+query,retriever,precision@5,recall@5,mrr
+What is list comprehension in Python?,BM25,0.2,1.0,0.3333333333333333
+What is list comprehension in Python?,FAISS,0.4,1.0,1.0
+What is list comprehension in Python?,HYBRID,0.6,1.0,0.3333333333333333
+How does a Python for loop work?,BM25,0.2,1.0,0.5
+How does a Python for loop work?,FAISS,0.0,0.0,0.0
+How does a Python for loop work?,HYBRID,0.2,1.0,0.25
+Difference between list and tuple in Python,BM25,0.2,1.0,1.0
+Difference between list and tuple in Python,FAISS,0.6,1.0,0.5
+Difference between list and tuple in Python,HYBRID,0.4,1.0,1.0
+How to define a function in Python?,BM25,0.4,1.0,1.0
+How to define a function in Python?,FAISS,0.4,1.0,0.25
+How to define a function in Python?,HYBRID,0.4,1.0,1.0
+Explain Python exception handling using try except,BM25,0.8,0.5,1.0
+Explain Python exception handling using try except,FAISS,0.4,0.5,1.0
+Explain Python exception handling using try except,HYBRID,0.6,0.5,1.0
+What is ArrayList in Java?,BM25,0.8,1.0,1.0
+What is ArrayList in Java?,FAISS,0.4,1.0,0.3333333333333333
+What is ArrayList in Java?,HYBRID,0.6,1.0,1.0
+Difference between ArrayList and LinkedList,BM25,0.8,1.0,1.0
+Difference between ArrayList and LinkedList,FAISS,0.6,1.0,0.5
+Difference between ArrayList and LinkedList,HYBRID,0.8,1.0,1.0
+What is HashMap in Java?,BM25,0.8,1.0,1.0
+What is HashMap in Java?,FAISS,0.6,1.0,0.5
+What is HashMap in Java?,HYBRID,0.6,1.0,1.0
+Explain the List interface in Java,BM25,0.2,1.0,1.0
+Explain the List interface in Java,FAISS,0.6,1.0,1.0
+Explain the List interface in Java,HYBRID,0.6,1.0,1.0
+What is the role of Object class in Java?,BM25,0.4,1.0,0.5
+What is the role of Object class in Java?,FAISS,0.2,1.0,1.0
+What is the role of Object class in Java?,HYBRID,0.4,1.0,1.0
+Explain a compact way to create lists in Python,BM25,0.4,1.0,0.3333333333333333
+Explain a compact way to create lists in Python,FAISS,0.8,1.0,1.0
+Explain a compact way to create lists in Python,HYBRID,0.4,1.0,1.0
+How does Python manage runtime errors?,BM25,0.2,0.5,0.5
+How does Python manage runtime errors?,FAISS,0.4,0.5,0.25
+How does Python manage runtime errors?,HYBRID,0.2,0.5,0.3333333333333333
+Why are dictionaries faster than lists for lookups?,BM25,0.0,0.0,0.0
+Why are dictionaries faster than lists for lookups?,FAISS,0.4,1.0,0.3333333333333333
+Why are dictionaries faster than lists for lookups?,HYBRID,0.0,0.0,0.0
+How does Python organize reusable code?,BM25,0.0,0.0,0.0
+How does Python organize reusable code?,FAISS,0.0,0.0,0.0
+How does Python organize reusable code?,HYBRID,0.0,0.0,0.0
+What happens when an exception is not handled in Python?,BM25,0.2,1.0,0.3333333333333333
+What happens when an exception is not handled in Python?,FAISS,0.4,1.0,0.3333333333333333
+What happens when an exception is not handled in Python?,HYBRID,0.2,1.0,0.2
+How does HashMap store data internally?,BM25,0.8,1.0,1.0
+How does HashMap store data internally?,FAISS,0.6,1.0,1.0
+How does HashMap store data internally?,HYBRID,0.6,1.0,1.0
+Why is ArrayList faster than LinkedList for random access?,BM25,0.6,1.0,1.0
+Why is ArrayList faster than LinkedList for random access?,FAISS,0.6,1.0,0.3333333333333333
+Why is ArrayList faster than LinkedList for random access?,HYBRID,0.6,1.0,1.0
+What happens when a key collision occurs in HashMap?,BM25,0.8,1.0,1.0
+What happens when a key collision occurs in HashMap?,FAISS,0.2,1.0,0.5
+What happens when a key collision occurs in HashMap?,HYBRID,0.8,1.0,1.0
+Why does every Java class inherit from Object?,BM25,0.0,0.0,0.0
+Why does every Java class inherit from Object?,FAISS,0.2,1.0,1.0
+Why does every Java class inherit from Object?,HYBRID,0.2,1.0,0.5
+How does Java handle runtime exceptions?,BM25,0.2,0.5,0.2
+How does Java handle runtime exceptions?,FAISS,0.6,1.0,1.0
+How does Java handle runtime exceptions?,HYBRID,0.4,0.5,0.5
+Difference between Python list and Java ArrayList,BM25,0.8,0.5,1.0
+Difference between Python list and Java ArrayList,FAISS,0.2,0.5,0.25
+Difference between Python list and Java ArrayList,HYBRID,0.6,0.5,1.0
+Compare exception handling in Python and Java,BM25,0.2,0.5,1.0
+Compare exception handling in Python and Java,FAISS,0.8,1.0,1.0
+Compare exception handling in Python and Java,HYBRID,0.6,1.0,1.0
+How are collections implemented in Python and Java?,BM25,0.2,0.5,0.3333333333333333
+How are collections implemented in Python and Java?,FAISS,0.6,0.5,1.0
+How are collections implemented in Python and Java?,HYBRID,0.4,0.5,1.0
+How does memory handling differ between Python and Java collections?,BM25,0.2,0.5,0.2
+How does memory handling differ between Python and Java collections?,FAISS,0.0,0.0,0.0
+How does memory handling differ between Python and Java collections?,HYBRID,0.0,0.0,0.0
+Compare dictionary in Python with HashMap in Java,BM25,0.8,1.0,1.0
+Compare dictionary in Python with HashMap in Java,FAISS,0.2,0.5,0.2
+Compare dictionary in Python with HashMap in Java,HYBRID,0.4,0.5,1.0
