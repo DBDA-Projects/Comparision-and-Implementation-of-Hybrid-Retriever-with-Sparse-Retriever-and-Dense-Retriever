@@ -1,1 +1,3 @@
 # Comparision-and-Implementation-of-Hybrid-Retriever-with-Sparse-Retriever-and-Dense-Retriever
+
+Retrieval systems are a fundamental component of modern applications such as search engines, recommender systems, and Retrieval-Augmented Generation (RAG) pipelines. Traditional sparse retrieval techniques rely on keyword matching, while modern dense retrieval techniques use semantic embeddings to capture contextual similarity. Each retrieval technique has limitations when used independently. This project focuses on the comparison and implementation of a hybrid retriever that combines sparse retrieval (BM25) and dense retrieval (FAISS) using Reciprocal Rank Fusion (RRF) to improve retrieval accuracy, recall, and ranking quality.
