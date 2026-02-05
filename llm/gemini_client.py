@@ -3,7 +3,7 @@ from google import genai
 from google.genai import types  
 
 client = genai.Client(
-    api_key="AIzaSyBIGWSisiF9KUKwO8KdBCvCkdymfpWW_6s"
+    api_key="AIzaSyD9EA-I9P_zWu6e4NPG22DNe1IoAE6HJfY"
 )
 
 def generate_answer(query, context):
