@@ -144,11 +144,6 @@ The prompt instructs Gemini to answer only from provided context, structured as:
 - Language / Syntax / Explanation / Example / Common mistakes
 - For comparative queries: comparison table + syntax + one example per language
 
-> ⚠️ **Security Note**: The Gemini API key is currently hardcoded in `llm/gemini_client.py`. Before sharing or deploying this code, move the key to an environment variable:
-> ```python
-> api_key=os.environ.get("GEMINI_API_KEY")
-> ```
-
 ---
 
 ## Installation
