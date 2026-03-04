@@ -1,0 +1,1036 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='Select Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MRR&quot;'>
+        <calculation class='tableau' formula='&quot;MRR&quot;' />
+        <members>
+          <member value='&quot;Precision@5&quot;' />
+          <member value='&quot;Recall@5&quot;' />
+          <member value='&quot;MRR&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='results' inline='true' name='federated.1fth0rx1j4x2nq1eol2xa19o4h5l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='results' name='textscan.0jkwr2v0o73irq1g9ojd31165dlc'>
+            <connection class='textscan' directory='C:/Users/hp/OneDrive/Documents/My Tableau Repository/Datasources' filename='results.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0jkwr2v0o73irq1g9ojd31165dlc' name='results.csv' table='[results#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='query' ordinal='0' />
+            <column datatype='string' name='retriever' ordinal='1' />
+            <column datatype='real' name='precision@5' ordinal='2' />
+            <column datatype='real' name='recall@5' ordinal='3' />
+            <column datatype='real' name='mrr' ordinal='4' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[results.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>query</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[query]</local-name>
+            <parent-name>[results.csv]</parent-name>
+            <remote-alias>query</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>retriever</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[retriever]</local-name>
+            <parent-name>[results.csv]</parent-name>
+            <remote-alias>retriever</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>precision@5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[precision@5]</local-name>
+            <parent-name>[results.csv]</parent-name>
+            <remote-alias>precision@5</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recall@5</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[recall@5]</local-name>
+            <parent-name>[results.csv]</parent-name>
+            <remote-alias>recall@5</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mrr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[mrr]</local-name>
+            <parent-name>[results.csv]</parent-name>
+            <remote-alias>mrr</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Selected Metric Value' datatype='real' name='[Calculation_0853526038253568]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;Precision@5&quot; THEN [precision@5]&#13;&#10;WHEN &quot;Recall@5&quot; THEN [recall@5]&#13;&#10;WHEN &quot;MRR&quot; THEN [mrr]&#13;&#10;END' />
+      </column>
+      <column caption='results.csv' datatype='table' name='[__tableau_internal_object_id__].[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]' role='measure' type='quantitative' />
+      <column caption='Mrr' datatype='real' name='[mrr]' role='measure' type='quantitative' />
+      <column caption='Precision@5' datatype='real' name='[precision@5]' role='measure' type='ordinal' />
+      <column caption='Query' datatype='string' name='[query]' role='dimension' type='nominal' />
+      <column caption='Recall@5' datatype='real' name='[recall@5]' role='measure' type='quantitative' />
+      <column caption='Retriever' datatype='string' name='[retriever]' role='dimension' type='nominal' />
+      <column-instance column='[mrr]' derivation='Avg' name='[avg:mrr:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[precision@5]' derivation='Avg' name='[avg:precision@5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[recall@5]' derivation='Avg' name='[avg:recall@5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[precision@5]' derivation='None' name='[none:precision@5:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[recall@5]' derivation='None' name='[none:recall@5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[retriever]' derivation='None' name='[none:retriever:nk]' pivot='key' type='nominal' />
+      <column-instance column='[mrr]' derivation='Sum' name='[pcto:sum:mrr:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[mrr]' derivation='Sum' name='[pcto:sum:mrr:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[precision@5]' derivation='Sum' name='[pcto:sum:precision@5:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[precision@5]' derivation='Sum' name='[pcto:sum:precision@5:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[recall@5]' derivation='Sum' name='[pcto:sum:recall@5:qk:2]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[recall@5]' derivation='Sum' name='[pcto:sum:recall@5:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Table' type='PctTotal' />
+      </column-instance>
+      <column-instance column='[mrr]' derivation='Sum' name='[sum:mrr:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[precision@5]' derivation='Sum' name='[sum:precision@5:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[recall@5]' derivation='Sum' name='[sum:recall@5:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Retriever)' hidden='true' name='[Action (Retriever)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[retriever]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/hp/AppData/Local/Temp/TableauTemp/#TableauTemp_1vi9qce145zt1v14o769r1dbx8x2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/04/2026 04:46:53 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>query</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[query]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>query</remote-alias>
+              <ordinal>0</ordinal>
+              <family>results.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>25</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>retriever</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[retriever]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>retriever</remote-alias>
+              <ordinal>1</ordinal>
+              <family>results.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>precision@5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[precision@5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>precision@5</remote-alias>
+              <ordinal>2</ordinal>
+              <family>results.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recall@5</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[recall@5]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recall@5</remote-alias>
+              <ordinal>3</ordinal>
+              <family>results.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mrr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[mrr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mrr</remote-alias>
+              <ordinal>4</ordinal>
+              <family>results.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' palette='orange_10_0' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:precision@5:ok]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[sum:precision@5:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[pcto:sum:precision@5:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[pcto:sum:mrr:qk]&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[pcto:sum:recall@5:qk:2]&quot;</bucket>
+            </map>
+            <map to='#9e3d22'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:recall@5:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[pcto:sum:mrr:qk:2]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[sum:mrr:qk]&quot;</bucket>
+            </map>
+            <map to='#ed6f20'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:precision@5:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[pcto:sum:recall@5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:recall@5:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[sum:recall@5:qk]&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[pcto:sum:precision@5:qk:2]&quot;</bucket>
+            </map>
+            <map to='#ffc685'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:mrr:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:precision@5:ok]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[sum:precision@5:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:recall@5:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[sum:recall@5:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:retriever:nk]' palette='miller_stone_10_0' type='palette'>
+            <map to='#4f6980'>
+              <bucket>&quot;BM25&quot;</bucket>
+            </map>
+            <map to='#849db1'>
+              <bucket>&quot;FAISS&quot;</bucket>
+            </map>
+            <map to='#a2ceaa'>
+              <bucket>&quot;HYBRID&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='Select Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MRR&quot;'>
+          <calculation class='tableau' formula='&quot;MRR&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='results.csv' id='results.csv_AE5D1AB6A1464374A8F222DCC7D74C5E'>
+            <properties context=''>
+              <relation connection='textscan.0jkwr2v0o73irq1g9ojd31165dlc' name='results.csv' table='[results#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='query' ordinal='0' />
+                  <column datatype='string' name='retriever' ordinal='1' />
+                  <column datatype='real' name='precision@5' ordinal='2' />
+                  <column datatype='real' name='recall@5' ordinal='3' />
+                  <column datatype='real' name='mrr' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter1' name='[Action1_4BC7062F12A14DEEB0EC6C2B26B23233]'>
+      <activation auto-clear='true' type='on-hover' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Metric vs Retriver' />
+      <command command='tsc:tsl-filter'>
+        <param name='exclude' value='Metric vs Retriver' />
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Metric vs Retriver'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results' name='federated.1fth0rx1j4x2nq1eol2xa19o4h5l' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='Select Metric' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;MRR&quot;'>
+              <calculation class='tableau' formula='&quot;MRR&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1fth0rx1j4x2nq1eol2xa19o4h5l'>
+            <column caption='Selected Metric Value' datatype='real' name='[Calculation_0853526038253568]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;Precision@5&quot; THEN [precision@5]&#13;&#10;WHEN &quot;Recall@5&quot; THEN [recall@5]&#13;&#10;WHEN &quot;MRR&quot; THEN [mrr]&#13;&#10;END' />
+            </column>
+            <column-instance column='[Calculation_0853526038253568]' derivation='Avg' name='[avg:Calculation_0853526038253568:qk]' pivot='key' type='quantitative' />
+            <column caption='Mrr' datatype='real' name='[mrr]' role='measure' type='quantitative' />
+            <column-instance column='[retriever]' derivation='None' name='[none:retriever:nk]' pivot='key' type='nominal' />
+            <column caption='Precision@5' datatype='real' name='[precision@5]' role='measure' type='ordinal' />
+            <column caption='Recall@5' datatype='real' name='[recall@5]' role='measure' type='quantitative' />
+            <column caption='Retriever' datatype='string' name='[retriever]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]'>
+            <groupfilter function='level-members' level='[none:retriever:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]' />
+              <text column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:Calculation_0853526038253568:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:Calculation_0853526038253568:qk]</rows>
+        <cols>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]</cols>
+      </table>
+      <simple-id uuid='{9D9CA8B5-97DA-47E5-AA91-053989664A11}' />
+    </worksheet>
+    <worksheet name='Performance of Various Retriver Techniques '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results' name='federated.1fth0rx1j4x2nq1eol2xa19o4h5l' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fth0rx1j4x2nq1eol2xa19o4h5l'>
+            <column-instance column='[mrr]' derivation='Avg' name='[avg:mrr:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[precision@5]' derivation='Avg' name='[avg:precision@5:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[recall@5]' derivation='Avg' name='[avg:recall@5:qk]' pivot='key' type='quantitative' />
+            <column caption='Mrr' datatype='real' name='[mrr]' role='measure' type='quantitative' />
+            <column-instance column='[retriever]' derivation='None' name='[none:retriever:nk]' pivot='key' type='nominal' />
+            <column caption='Precision@5' datatype='real' name='[precision@5]' role='measure' type='ordinal' />
+            <column caption='Recall@5' datatype='real' name='[recall@5]' role='measure' type='quantitative' />
+            <column caption='Retriever' datatype='string' name='[retriever]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:mrr:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:precision@5:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:recall@5:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[Action (Retriever)]'>
+            <groupfilter function='level-members' level='[retriever]' user:ui-action-filter='[Action1_4BC7062F12A14DEEB0EC6C2B26B23233]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[:Measure Names]</column>
+            <column>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[Action (Retriever)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[:Measure Names]' />
+              <text column='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[Multiple Values]</rows>
+        <cols>([federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk] / [federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{A77267CE-C615-4CAD-A298-086CA40BD77B}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='82022' id='3' param='horz' type-v2='layout-flow' w='54737' x='483' y='16979'>
+            <zone h='82022' id='5' name='Performance of Various Retriver Techniques ' show-title='false' w='54737' x='483' y='16979'>
+              <layout-cache cell-count-w='9' minheight='181' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='15980' id='6' param='horz' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone forceUpdate='true' h='15980' id='8' type-v2='text' w='99034' x='483' y='999'>
+              <formatted-text>
+                <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='20' underline='true'>Comparive Analysis of Hybrid Retriever with Sparse and Dense Retriever </run>
+                <run fontalignment='1'>Æ&#10;</run>
+                <run bold='true' fontalignment='1' fontsize='16'>Æ </run>
+              </formatted-text>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='82022' id='7' name='Metric vs Retriver' show-title='false' w='44297' x='55220' y='16979'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98002' id='13' param='vert' type-v2='layout-flow' w='99034' x='483' y='999'>
+                <zone forceUpdate='true' h='15980' id='8' type-v2='text' w='99034' x='483' y='999'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontname='Tableau Semibold' fontsize='20' underline='true'>Comparive Analysis of Hybrid Retriever with Sparse and Dense Retriever </run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                    <run bold='true' fontalignment='1' fontsize='16'>Æ </run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='82022' id='5' is-fixed='true' name='Performance of Various Retriver Techniques ' show-title='false' w='54737' x='483' y='16979'>
+                  <layout-cache cell-count-w='9' minheight='181' non-cell-size-w='64' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='82022' id='7' is-fixed='true' name='Metric vs Retriver' show-title='false' w='44297' x='55220' y='16979'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{0992A333-4445-48A9-BC1C-A9B370A71EE5}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='Performance of Various Retriver Techniques '>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[:Measure Names]</field>
+            <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{2D63B7BD-4AE8-4255-903E-818B27A59D28}' />
+    </window>
+    <window class='worksheet' name='Metric vs Retriver'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]' type='color' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BE81A8FE-510E-41C2-BA67-5460A9275FD9}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Metric vs Retriver'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields>
+                      <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]</field>
+                    </x-fields>
+                    <y-fields>
+                      <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:Calculation_0853526038253568:qk]</field>
+                    </y-fields>
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[avg:Calculation_0853526038253568:qk]</field>
+                    <field>[federated.1fth0rx1j4x2nq1eol2xa19o4h5l].[none:retriever:nk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>0.64933333333333332</value>
+                  <value>&quot;BM25&quot;</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='Performance of Various Retriver Techniques '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='7' />
+      <simple-id uuid='{CB380F0B-EEC1-4FA4-A59C-7011F6262040}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Metric vs Retriver' width='192'>
+      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
+      W6roaE6cAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Performance of Various Retriver Techniques ' width='192'>
+      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
+      AISv/T+lt0NnutMnpQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

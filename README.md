@@ -213,7 +213,7 @@ An interactive Tableau dashboard visualizes:
 
 (Data source: evaluation/results.csv)
 
-Dashboard link: (To be added after publishing)
+**Dashboard link**: [View on Tableau Public](https://public.tableau.com/app/profile/mrunal.hadke/viz/Hybrid_retriever_DV/Dashboard1?publish=yes)
 
 ---
 
