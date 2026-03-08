@@ -1,9 +1,13 @@
 import os
+import streamlit as st
 from google import genai
 from google.genai import types  
 
+# Load API key from Streamlit secrets
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+
 client = genai.Client(
-    api_key="AIzaSyDsePvqhFce9Ox0Ekdd3_bBqgdj6s73gYQ"
+    api_key=GOOGLE_API_KEY
 )
 
 def generate_answer(query, context):
@@ -42,7 +46,7 @@ Answer:
             contents=prompt,
             config=types.GenerateContentConfig(
                 temperature=0.5,
-                 max_output_tokens=15000
+                 max_output_tokens=2048
             )
         )
         return response.text.strip()
