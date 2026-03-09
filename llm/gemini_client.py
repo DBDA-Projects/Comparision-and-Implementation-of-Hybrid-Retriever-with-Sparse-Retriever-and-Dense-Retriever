@@ -1,19 +1,18 @@
-import os
 import streamlit as st
 from google import genai
 from google.genai import types  
 
-# Load API key from Streamlit secrets
 GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 
-client = genai.Client(
-    api_key=GOOGLE_API_KEY
-)
+client = genai.Client(api_key=GOOGLE_API_KEY)
 
 def generate_answer(query, context):
+
+    if not context or len(context.strip()) < 20:
+        return "No relevant documentation found."
+
     prompt = f"""
-You are an AI tutor that helps users understand
-PROGRAMMING SYNTAX clearly.
+You are an AI tutor that helps users understand PROGRAMMING SYNTAX.
 
 Answer format:
 - Language:
@@ -23,33 +22,36 @@ Answer format:
 - Common mistakes:
 
 If the question is comparative:
-- Must Provide a comparison table
-- Show syntax 
+- Provide a comparison table
+- Show syntax
 - Give one example for each
-
 
 Use ONLY the context below.
 Do NOT invent APIs or syntax.
-Context:
+
+CONTEXT:
 {context}
 
-Question:
+QUESTION:
 {query}
 
-Answer:
+ANSWER:
 """
 
     try:
-        # Use the correct model string without leading whitespace
         response = client.models.generate_content(
-            model="gemini-2.5-flash-lite", 
+            model="gemini-2.5-flash-lite",
             contents=prompt,
             config=types.GenerateContentConfig(
                 temperature=0.5,
-                 max_output_tokens=2048
+                max_output_tokens=1024
             )
         )
-        return response.text.strip()
+
+        if response.text:
+            return response.text.strip()
+        else:
+            return response.candidates[0].content.parts[0].text.strip()
 
     except Exception as e:
         return f"Gemini error: {e}"
