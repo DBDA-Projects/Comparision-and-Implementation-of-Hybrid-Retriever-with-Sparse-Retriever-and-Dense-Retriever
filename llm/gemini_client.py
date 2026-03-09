@@ -2,9 +2,9 @@ import streamlit as st
 from google import genai
 from google.genai import types  
 
-GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+api_key = st.secrets["GEMINI_API_KEY"]
 
-client = genai.Client(api_key=GOOGLE_API_KEY)
+client = genai.Client(api_key=api_key)
 
 def generate_answer(query, context):
 
