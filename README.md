@@ -138,7 +138,7 @@ Raw data is official HTML documentation:
 
 **Model**: `gemini-2.5-flash-lite`  
 **SDK**: `google-genai`  
-**Parameters**: temperature=0.5, max_output_tokens=15000
+**Parameters**: temperature=0.5, max_output_tokens=1024
 
 The prompt instructs Gemini to answer only from provided context, structured as:
 - Language / Syntax / Explanation / Example / Common mistakes
