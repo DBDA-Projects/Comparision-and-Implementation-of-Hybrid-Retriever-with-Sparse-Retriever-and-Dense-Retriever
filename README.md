@@ -1,7 +1,10 @@
 # Comparision-and-Implementation-of-Hybrid-Retriever-with-Sparse-Retriever-and-Dense-Retriever
 
 ## Overview
-A Retrieval-Augmented Generation (RAG) system designed to answer programming questions related to Python and Java syntax by combining sparse retrieval (BM25) and dense retrieval (FAISS embeddings) using Reciprocal Rank Fusion (RRF). The system uses Google Gemini as the LLM to generate context-aware responses from retrieved documentation. Additionally, Tableau dashboards are used to perform business intelligence (BI) analysis and visualize the comparative performance of the hybrid, sparse, and dense retrieval methods.
+
+<p>
+A Retrieval-Augmented Generation (RAG) system that answers programming questions related to Python and Java syntax by combining sparse retrieval (BM25) and dense retrieval (FAISS embeddings) using Reciprocal Rank Fusion (RRF). The system uses Google Gemini to generate context-aware responses from retrieved documentation. Tableau dashboards are used to visualize and compare the performance of hybrid, sparse, and dense retrieval approaches.
+</p>
 ---
 
 ## 🌐 Live Deployment
