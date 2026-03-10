@@ -5,7 +5,6 @@
 <p>
 A Retrieval-Augmented Generation (RAG) system designed to answer programming questions related to Python and Java syntax by combining sparse retrieval (BM25) and dense retrieval (FAISS embeddings) using Reciprocal Rank Fusion (RRF). The system uses Google Gemini as the LLM to generate context-aware responses from retrieved documentation. Additionally, Tableau dashboards are used to perform business intelligence (BI) analysis and visualize the comparative performance of the hybrid, sparse, and dense retrieval methods.
 </p>
----
 
 ## 🌐 Live Deployment
 # Doc-Buddy: Hybrid Retrieval RAG for Programming Syntax
