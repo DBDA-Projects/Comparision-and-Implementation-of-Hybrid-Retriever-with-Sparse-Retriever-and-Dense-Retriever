@@ -7,11 +7,13 @@ A Retrieval-Augmented Generation (RAG) system designed to answer programming que
 </p>
 
 ## 🌐 Live Deployment
-# Doc-Buddy: Hybrid Retrieval RAG for Programming Syntax
 
-The application is publicly deployed using Streamlit Cloud:
+Doc-Buddy: Hybrid Retrieval RAG for Programming Syntax
 
-https://hybridretriever.streamlit.app
+The application is publicly deployed on Streamlit Cloud.
+
+🚀 **Try the App:**  
+👉 [Launch Doc-Buddy](https://hybridretriever.streamlit.app)
 
 The deployed app supports:
 
